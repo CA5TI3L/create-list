@@ -1,0 +1,20 @@
+.listItemsContainer {
+    width: 60%;
+    min-height: 70vh;
+    float: left;
+    margin-top: 50px;
+    border: #EDD3D6 1px solid;
+    background-image: url("../../assets/cubes.jpg");
+    background-size: cover;
+
+    input {
+        margin-top: 20px;
+        margin-left: 35%;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        width: 30%;
+    }
+}

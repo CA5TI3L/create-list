@@ -1,0 +1,40 @@
+.sideBarContainer {
+    background-color: #EDD3D6;
+    width: 30%;
+    min-height: 70vh;
+    margin-top: 50px;
+    float: left;
+    
+    input {
+      color: plum;
+      margin-top: 30px;
+      width: 80%;
+      margin-left: 10%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .addList {
+      position: relative;
+      bottom: -310px;
+      margin-left: 10%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;;
+
+        input {
+          margin: 0;
+          width: 80%;
+        }
+
+        label {
+          color: purple;
+        }
+    }
+
+        button {
+        background-color:  #EDD3D6;
+        border: solid purple 1px;
+        margin-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        :hover {background-color: white};
+        
+    }
+  }

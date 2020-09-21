@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
+  userLists: string[] = new Array();
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  createNewList(inputFromUser: string) {
+    this.userLists.push({inputFromUser, [{item: ""}]})
   }
 
 }
