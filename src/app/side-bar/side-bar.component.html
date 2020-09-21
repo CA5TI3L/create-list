@@ -8,8 +8,8 @@
   
       <div class="addList">
         <label for="">Add New List</label>
-        <input type="text" class="form-control" placeholder="Default input" id="listItem" value="">
-        <button type="button" class="btn btn-outline-danger" (click)="createNewList()">SUBMIT</button>
+        <input type="text" class="form-control" placeholder="Default input" id="listItem" value="" #listName name="listName">
+        <button type="button" class="btn btn-outline-danger" (click)="createNewList(listName.value)">SUBMIT</button>
       </div>
   </div>
 

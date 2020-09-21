@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  userLists: string[] = new Array();
+  userLists = new Array();
 
 
 
@@ -17,7 +17,11 @@ export class SideBarComponent implements OnInit {
   }
 
   createNewList(inputFromUser: string) {
-    this.userLists.push({inputFromUser, [{item: ""}]})
+    var temp = {
+      arrayName: inputFromUser,
+      listItems: []
+    }
+    this.userLists.push(temp)
   }
 
 }
