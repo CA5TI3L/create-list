@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy  } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, EventEmitter, Output  } from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -9,6 +9,7 @@ import { Component, OnInit, ChangeDetectionStrategy  } from '@angular/core';
 export class SideBarComponent implements OnInit {
 
   userLists = new Array();
+  @Output() passListData : EventEmitter<any> = new EventEmitter();
 
 
 
@@ -23,6 +24,10 @@ export class SideBarComponent implements OnInit {
       listItems: []
     }
     this.userLists.push(temp)
+  }
+
+  changeCurrentList(item) {
+    this.passListData.emit(item);
   }
 
 }

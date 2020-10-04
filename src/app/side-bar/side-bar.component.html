@@ -1,16 +1,15 @@
-<div class = "sideBarContainer">
-   
+<div class="sideBarContainer">
+
   <div class="lists">
-   <ul>
-       <li *ngFor="let item of userLists"> {{item.arrayName}} </li>
-   </ul>
-  </div>
-  
-      <div class="addList">
-        <label for="">Add New List</label>
-        <input type="text" class="form-control" placeholder="Default input" id="listItem" value="" #listName name="listName">
-        <button type="button" class="btn btn-outline-danger" (click)="createNewList(listName.value)">SUBMIT</button>
-      </div>
+    <ul>
+      <li *ngFor="let item of userLists" (click)=changeCurrentList(item)> {{item.arrayName}} </li>
+    </ul>
   </div>
 
-  
+  <div class="addList">
+    <label for="">Add New List</label>
+    <input type="text" class="form-control" placeholder="Default input" id="listItem" value="" #listName
+      name="listName">
+    <button type="button" class="btn btn-outline-danger" (click)="createNewList(listName.value)">SUBMIT</button>
+  </div>
+</div>

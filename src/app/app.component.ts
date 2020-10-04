@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'create-list';
+  item;
+
+  sendListData(item) {
+    this.item = item;
+  }
 }

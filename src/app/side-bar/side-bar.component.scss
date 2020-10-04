@@ -1,20 +1,42 @@
 .sideBarContainer {
-    background-color: #EDD3D6;
+    background-color: darkmagenta;
     width: 30%;
     min-height: 70vh;
     margin-top: 50px;
     float: left;
     
     input {
-      color: plum;
+      color: black;
       margin-top: 30px;
       width: 80%;
       margin-left: 10%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    .lists {
+      height: 40vh;
+      overflow-y: scroll;
+      ul {
+        list-style-type: none;
+        li {
+          display: block;
+          height: 50px;
+          width: 450px;
+          text-align: center;
+          border: 2px solid black;
+          color: white;
+          font-size: 30px;
+          margin-top: 10px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
     .addList {
       position: relative;
-      bottom: -310px;
+      bottom: -100px;
       margin-left: 10%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;;
 
@@ -24,7 +46,7 @@
         }
 
         label {
-          color: purple;
+          color: white;
         }
     }
 

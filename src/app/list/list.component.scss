@@ -7,6 +7,20 @@
     background-image: url("../../assets/cubes.jpg");
     background-size: cover;
 
+    #listHeading {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        display: block;
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        border: 2px solid white;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
     input {
         margin-top: 20px;
         margin-left: 35%;
@@ -17,4 +31,31 @@
     ul {
         width: 30%;
     }
+
+    .addList {
+         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;;
+  
+          input {
+            margin: 0;
+            width: 100%;
+          }
+  
+          label {
+            color: white;
+          }
+      }
+  
+          button {
+          background-color:  #EDD3D6;
+          border: solid purple 1px;
+          margin-top: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: purple;
+          :hover {background-color: white};
+          
+      }
 }
